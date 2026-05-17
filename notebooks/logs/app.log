@@ -1,0 +1,12 @@
+2026-05-17 16:05:33 | INFO     | src.utils.config_loader | Config loaded from ../config.yaml
+2026-05-17 16:05:35 | INFO     | src.utils.config_loader | Config loaded from ../config.yaml
+2026-05-17 16:06:23 | INFO     | src.utils.config_loader | Config loaded from ../config.yaml
+2026-05-17 16:11:10 | INFO     | src.utils.config_loader | Config loaded from config.yaml
+2026-05-17 16:11:12 | INFO     | src.utils.config_loader | Config loaded from config.yaml
+2026-05-17 16:11:35 | INFO     | src.utils.config_loader | Config loaded from config.yaml
+2026-05-17 16:19:13 | INFO     | src.utils.config_loader | Config loaded from config.yaml
+2026-05-17 16:19:24 | INFO     | src.utils.config_loader | Config loaded from config.yaml
+2026-05-17 16:22:36 | INFO     | src.utils.config_loader | Config loaded from config.yaml
+2026-05-17 16:22:36 | INFO     | src.data.ingestion | Loading dataset from data\raw\DataCoSupplyChainDataset.csv
+2026-05-17 16:22:38 | INFO     | src.data.ingestion | Loaded 180,519 rows x 53 columns
+2026-05-17 16:22:39 | INFO     | src.data.validation | Data validation PASSED
