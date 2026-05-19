@@ -5,3 +5,36 @@
 2026-05-19 16:29:26 | INFO     | src.features.engineer | Created 8 new features. Total features: 15
 2026-05-19 16:29:27 | INFO     | src.features.preprocessing | Pipeline saved to models/artifacts/pipeline.pkl
 2026-05-19 16:29:27 | INFO     | src.features.preprocessing | Output shape: (180519, 15)
+2026-05-19 16:42:45 | INFO     | src.utils.config_loader | Config loaded from config.yaml
+2026-05-19 16:42:45 | INFO     | src.data.ingestion | Loading dataset from data\raw\DataCoSupplyChainDataset.csv
+2026-05-19 16:42:47 | INFO     | src.data.ingestion | Loaded 180,519 rows x 53 columns
+2026-05-19 16:42:47 | INFO     | src.features.engineer | Engineering fraud features...
+2026-05-19 16:42:47 | INFO     | src.features.engineer | Created 8 new features. Total features: 15
+2026-05-19 16:42:48 | INFO     | src.features.preprocessing | Pipeline saved to models/artifacts/pipeline.pkl
+2026-05-19 16:42:48 | INFO     | src.features.preprocessing | Output shape: (180519, 15)
+2026-05-19 16:42:48 | INFO     | src.utils.config_loader | Config loaded from config.yaml
+2026-05-19 16:42:48 | INFO     | src.models.train | MLflow tracking configured
+2026-05-19 16:43:04 | INFO     | src.models.train | IsolationForest: 5.0% fraud rate, 2.8s training
+2026-05-19 16:45:15 | INFO     | src.utils.config_loader | Config loaded from config.yaml
+2026-05-19 16:45:15 | INFO     | src.data.ingestion | Loading dataset from data\raw\DataCoSupplyChainDataset.csv
+2026-05-19 16:45:17 | INFO     | src.data.ingestion | Loaded 180,519 rows x 53 columns
+2026-05-19 16:45:17 | INFO     | src.features.engineer | Engineering fraud features...
+2026-05-19 16:45:17 | INFO     | src.features.engineer | Created 8 new features. Total features: 15
+2026-05-19 16:45:17 | INFO     | src.features.preprocessing | Pipeline saved to models/artifacts/pipeline.pkl
+2026-05-19 16:45:17 | INFO     | src.features.preprocessing | Output shape: (180519, 15)
+2026-05-19 16:45:17 | INFO     | src.utils.config_loader | Config loaded from config.yaml
+2026-05-19 16:45:17 | INFO     | src.models.train | MLflow tracking configured
+2026-05-19 16:45:31 | INFO     | src.models.train | IsolationForest: 5.0% fraud rate, 2.9s training
+2026-05-19 16:46:23 | INFO     | src.utils.config_loader | Config loaded from config.yaml
+2026-05-19 16:46:23 | INFO     | src.data.ingestion | Loading dataset from data\raw\DataCoSupplyChainDataset.csv
+2026-05-19 16:46:25 | INFO     | src.data.ingestion | Loaded 180,519 rows x 53 columns
+2026-05-19 16:46:25 | INFO     | src.features.engineer | Engineering fraud features...
+2026-05-19 16:46:25 | INFO     | src.features.engineer | Created 8 new features. Total features: 15
+2026-05-19 16:46:25 | INFO     | src.features.preprocessing | Pipeline saved to models/artifacts/pipeline.pkl
+2026-05-19 16:46:25 | INFO     | src.features.preprocessing | Output shape: (180519, 15)
+2026-05-19 16:46:25 | INFO     | src.utils.config_loader | Config loaded from config.yaml
+2026-05-19 16:46:25 | INFO     | src.models.train | MLflow tracking configured
+2026-05-19 16:46:40 | INFO     | src.models.train | IsolationForest: 5.0% fraud rate, 2.8s training
+2026-05-19 16:47:10 | INFO     | src.models.train | LOF: 4.5% fraud rate
+2026-05-19 16:47:10 | INFO     | src.models.train | Best model selected: isolation_forest
+2026-05-19 16:47:10 | INFO     | src.models.train | Best model (isolation_forest) saved to models/artifacts/best_model.pkl

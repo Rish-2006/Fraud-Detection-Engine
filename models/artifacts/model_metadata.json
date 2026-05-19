@@ -1,0 +1,10 @@
+{
+  "model_name": "isolation_forest",
+  "result": {
+    "model_name": "IsolationForest",
+    "fraud_rate": "0.050000276979154545",
+    "training_time": "2.8063015937805176",
+    "run_id": "855d99ab220044529a874b3be5d8b16e",
+    "n_flagged": "9026"
+  }
+}
