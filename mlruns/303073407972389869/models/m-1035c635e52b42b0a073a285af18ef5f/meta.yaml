@@ -1,0 +1,10 @@
+artifact_location: file:C:/Users/rishi/fraud-detection-pro/mlruns/303073407972389869/models/m-1035c635e52b42b0a073a285af18ef5f/artifacts
+creation_timestamp: 1779380236522
+experiment_id: '303073407972389869'
+last_updated_timestamp: 1779380241290
+model_id: m-1035c635e52b42b0a073a285af18ef5f
+model_type: null
+name: model
+source_run_id: 34c20546b5df4ea0a329ec9c95263d57
+status: 2
+status_message: null

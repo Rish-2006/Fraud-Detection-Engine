@@ -1,0 +1,14 @@
+artifact_uri: file:C:/Users/rishi/fraud-detection-pro/mlruns/303073407972389869/6ff43364053a4ec29956234d2b1a3a94/artifacts
+end_time: 1779366944250
+entry_point_name: ''
+experiment_id: '303073407972389869'
+lifecycle_stage: active
+run_id: 6ff43364053a4ec29956234d2b1a3a94
+run_name: isolation_forest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1779366928417
+status: 3
+tags: []
+user_id: rishi
