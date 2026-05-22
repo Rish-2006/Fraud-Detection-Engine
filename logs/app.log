@@ -134,3 +134,10 @@
 2026-05-21 21:52:11 | INFO     | src.models.explainer | Target path not found. Attempting fallback location check: models\artifacts\best_model.pkl
 2026-05-21 21:52:11 | INFO     | src.models.explainer | Fitting SHAP explainer on 30 background samples
 2026-05-21 21:52:11 | INFO     | src.models.explainer | Generating vectors across sample size: 10
+2026-05-22 18:02:28 | INFO     | src.api.main | API starting up...
+2026-05-22 18:02:29 | INFO     | src.api.predictor | FraudPredictor initialized
+2026-05-22 18:02:29 | INFO     | src.api.main | Predictor loaded. API ready.
+2026-05-22 18:06:57 | INFO     | src.features.engineer | Engineering fraud features...
+2026-05-22 18:06:57 | INFO     | src.features.engineer | Created 8 new features. Total features: 15
+l o g _ r o t a t i o n _ c h e c k :   t r u e  
+ 
