@@ -1,0 +1,12 @@
+{
+  "total_transactions": 180519,
+  "fraud_flagged": 9026,
+  "normal_transactions": 171493,
+  "fraud_rate_pct": 5.0,
+  "score_mean_all": 0.1379,
+  "score_mean_fraud": -0.0395,
+  "score_mean_normal": 0.1473,
+  "score_separation": 0.1868,
+  "high_risk_count": 18,
+  "medium_risk_count": 2928
+}

@@ -3,8 +3,8 @@
   "result": {
     "model_name": "IsolationForest",
     "fraud_rate": "0.050000276979154545",
-    "training_time": "3.000155448913574",
-    "run_id": "65c0d8b577cd4e908c0a13860e56c7ba",
+    "training_time": "2.9185147285461426",
+    "run_id": "9528c801525742fdb4af305b50d247c5",
     "n_flagged": "9026"
   }
 }
