@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  # 1. Core Fraud Detection API service
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fraudguard-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./logs:/app/logs
+      - ./outputs:/app/outputs
+    environment:
+      - PYTHONPATH=/app
+    restart: unless-stopped
+
+  # 2. Operational Streamlit Dashboard UI service
+  dashboard:
+    image: python:3.11-slim
+    container_name: fraudguard-dashboard
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - "8501:8501"
+    environment:
+      - PYTHONPATH=/app
+    command: >
+      bash -c "pip install -r requirements.txt && 
+               streamlit run src/dashboard/Home.py --server.port=8501 --server.address=0.0.0.0"
+    depends_on:
+      - api
+    restart: unless-stopped
+
+  # 3. MLflow Tracking Dashboard server service
+  mlflow:
+    image: python:3.11-slim
+    container_name: fraudguard-mlflow
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - "5000:5000"
+    command: >
+      bash -c "pip install mlflow && 
+               mlflow server --host 0.0.0.0 --port 5000 --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./mlruns"
+    restart: unless-stopped

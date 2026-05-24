@@ -1,0 +1,45 @@
+﻿project:
+  name: FraudGuard Pro
+  version: 1.0.0
+
+data:
+  raw_path: data/raw/DataCoSupplyChainDataset.csv
+  processed_path: data/processed/
+  encoding: latin-1
+  features:
+    - Order Item Quantity
+    - Sales
+    - Order Item Discount
+    - Order Item Profit Ratio
+    - Order Item Total
+    - Late_delivery_risk
+    - Order Item Discount Rate
+
+model:
+  isolation_forest:
+    n_estimators: 200
+    contamination: 0.05
+    max_samples: auto
+    random_state: 42
+    n_jobs: -1
+  lof:
+    n_neighbors: 20
+    contamination: 0.05
+    n_jobs: -1
+  thresholds:
+    high_risk: -0.15
+    medium_risk: -0.05
+
+api:
+  host: 0.0.0.0
+  port: 8000
+  workers: 1
+
+mlflow:
+  tracking_uri: mlruns
+  experiment_name: fraud-detection
+
+logging:
+  level: INFO
+  format: '%(asctime)s | %(levelname)s | %(name)s | %(message)s'
+  file: logs/app.log

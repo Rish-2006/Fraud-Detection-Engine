@@ -1,0 +1,32 @@
+# Logs
+logs/
+*.log
+
+# MLflow
+mlruns/
+mlflow.db
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environment
+venv/
+
+# Data files (too large)
+data/raw/
+data/processed/
+
+# Model artifacts (too large)
+models/artifacts/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
