@@ -1,6 +1,7 @@
 # src/dashboard/Home.py
 import streamlit as st
 import requests
+import os
 
 st.set_page_config(
     page_title='FraudGuard Pro',
@@ -35,12 +36,15 @@ st.markdown('''
 | **Container** | Docker | Reproducible deployment |
 ''')
 
-# API health check
+# API health check — works both locally and inside Docker
+API_URL = os.getenv('API_URL', 'http://localhost:8000')
+
 try:
-    r = requests.get('http://localhost:8000/health', timeout=2)
+    r = requests.get(f'{API_URL}/health', timeout=2)
     if r.status_code == 200:
-        st.success('✅ API is online and ready')
+        data = r.json()
+        st.success(f'✅ API is online and ready — Model: {data.get("model", "IsolationForest")} | Version: {data.get("version", "1.0.0")} | Uptime: {data.get("uptime_sec", 0):.0f}s')
     else:
         st.warning('⚠️ API responded with non-200 status')
 except:
-    st.error('❌ API offline — start with: uvicorn src.api.main:app --reload')
+    st.error('❌ API offline — run: docker-compose up')
