@@ -27,6 +27,7 @@ services:
       - "8501:8501"
     environment:
       - PYTHONPATH=/app
+      - API_URL=http://fraudguard-api:8000
     command: >
       bash -c "pip install -r requirements.txt && 
                streamlit run src/dashboard/Home.py --server.port=8501 --server.address=0.0.0.0"
